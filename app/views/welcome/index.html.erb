@@ -1,0 +1,30 @@
+	<div class="wrapper wrapper_padding clearfix">
+			<div class="col-1 homepage_content">
+				<h2>About</h2>
+				<hr>
+				<p>Four loko seitan austin, authentic portland pug letterpress yuccie crucifix messenger bag microdosing whatever brooklyn tumblr.</p><p> Etsy taxidermy XOXO, plaid wayfarers single-origin coffee hella street art cardigan. Photo booth venmo next level, tacos lomo actually vegan kale chips.</p><p> Artisan 3 wolf moon ramps twee, flexitarian freegan celiac scenester chartreuse pop-up lumbersexual tofu.</p> <p>Shabby chic hammock sartorial, put a bird on it farm-to-table chambray craft beer tumblr affogato franzen wolf.</p><p> Disrupt wayfarers hella austin, green juice kinfolk kombucha fanny pack microdosing food truck venmo.</p><p> Truffaut polaroid viral swag gochujang bicycle rights, bespoke occupy slow-carb umami distillery etsy tattooed.</p>
+			</div>
+
+			<div class="col-2 homepage_content">
+				<h2>Stuff I've Written</h2>
+				<hr>
+
+				<% @posts.each do |post| %>
+
+				<h3><a href="#"><%= link_to post.title, post %></a></h3>
+				<p class="date"><%= post.created_at.strftime("%A, %b %d") %></p>
+				<% end %>
+				
+			</div>
+
+			<div class="col-3 homepage_content">
+				<h2>Stuff I've Built</h2>
+				<hr>
+				<h3><a href="#">Textill</a></h3>
+				<p class="date">Friday April 10th</p>
+				<h3><a href="#">Thhall</a></h3>
+				<p class="date">Friday April 3th</p>
+				<h3><a href="#">3Z</a></h3>
+				<p class="date">Friday April 17th</p>
+			</div>
+		</div>
